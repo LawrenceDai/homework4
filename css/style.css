@@ -1,0 +1,64 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+header ,
+.nav_links,
+.pricing ,
+.gallery {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.nav_links {
+	flex-direction: column;
+	align-items: center;
+}
+
+#logo {
+	width: 100vw;
+	animation-name: FadeIn;
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
+}
+
+@keyframes FadeIn {
+	from {opacity: 0%;}
+	to {opacity: 100%;}
+}
+
+.card,
+.gallery img {
+	width: 100vw;
+}
+
+@media (min-width: 700px) {
+	header,
+	.nav_links,
+	.pricing,
+	.gallery {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	header {
+		justify-content: space-between;
+	}
+
+	#logo {
+		width: 400px;
+	}
+
+	.card,
+	.gallery img {
+		width: 300px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#logo {
+		animation: none;
+	}
+}
