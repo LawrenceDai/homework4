@@ -18,7 +18,7 @@ header ,
 }
 
 #logo {
-	width: 100vw;
+	width: 100%;
 	animation-name: FadeIn;
 	animation-duration: 3s;
 	animation-timing-function: ease-in;
@@ -31,7 +31,7 @@ header ,
 
 .card,
 .gallery img {
-	width: 100vw;
+	width: 100%;
 }
 
 @media (min-width: 700px) {
@@ -40,7 +40,6 @@ header ,
 	.pricing,
 	.gallery {
 		flex-direction: row;
-		flex-wrap: wrap;
 	}
 
 	header {
