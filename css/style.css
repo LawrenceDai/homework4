@@ -34,7 +34,7 @@ header ,
 	width: 100%;
 }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
 	header,
 	.nav_links,
 	.pricing,
